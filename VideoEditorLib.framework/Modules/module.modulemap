@@ -1,0 +1,11 @@
+framework module VideoEditorLib {
+  umbrella header "VideoEditorLib.h"
+
+  export *
+  module * { export * }
+}
+
+module VideoEditorLib.Swift {
+  header "VideoEditorLib-Swift.h"
+  requires objc
+}

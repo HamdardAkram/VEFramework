@@ -19,8 +19,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "license" }
   s.author             = { "Muhammad Akram" => "hamdard.akram@gmail.com" }
   s.ios.deployment_target = '12.0'
-  s.ios.vendored_frameworks = 'VEFramework.framework'
-  s.source            = { :http => 'https://github.com/HamdardAkram/VEFramework.git' }
+#  s.ios.vendored_frameworks = 'VideoEditorLib.framework'
+  s.source            = { :git => "https://github.com/HamdardAkram/VEFramework.git", :tag => "#{s.version}" }
   s.exclude_files = "VEFramework/*"
 
   s.dependency 'SVProgressHUD'
